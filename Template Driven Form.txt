@@ -1,0 +1,57 @@
+FORMS
+    > TEMPLATE DRIVEN FORMS : 
+        > Asynchronous
+        > LOGIC resides in TEMPLATE
+        > Used for basic requirements
+        > Easy to use
+    > REACTIVE FORMS: 
+        > Synchronous
+        > LOGIC resides in the COMPONENT/TS FILE
+        > Flexible
+        > Handles complex scenarios
+        > Testable 
+--------------------------------------------------
+
+TEMPLATE DRIVEN FORMS
+
+    > Setting Up
+        > Create a project and import FormsModule into App Module file 
+        > Forms will be treated as ngForm
+
+    > Binding data with ngForm
+        > take the reference of form using "ngForm" to get the values of the form
+        > tell the reference which field/form control is to be tacked using ngModel directive
+        > work only if u provide a name to form control
+
+        > ngModelGroup
+            >to group data such as address
+    
+    > Binding data with model
+        > Create a model and import intp app module file
+        > use two way data binding [(ngModel)]="property" for the form controls which is to be tracked
+        
+    > Classes provided for Validation
+        > ng-touched, ng-untouched
+        > ng-prestine, ng-dirty
+        > ng-valid, ng-invalid
+
+        >It also provides directives to track particular form control..
+          touched, untouched, prestine, directives, valid, invalid by taking the refence #reference="ngModel"
+
+    > Visual feedback
+        > uou can use boostrap built in classes
+        > you can use custom styles
+
+    > Display errors
+        > uou can use boostrap built in classes
+        > you can use ngIf directive
+         
+    > select control validation
+
+    > form validation using reference.form.valid
+
+    > submit data to server
+
+    > Receive form data
+
+   
